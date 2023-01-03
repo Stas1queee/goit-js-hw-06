@@ -6,7 +6,7 @@ for (const category of categories) {
   const nameOfCategory = category.firstElementChild.textContent;
   console.log("Category:", nameOfCategory);
 
-  const numberOfElements = category.querySelectorAll("li").length;
+  const numberOfElements = category.lastElementChild.children.length;
   console.log("Elements:", numberOfElements);
 }
 
